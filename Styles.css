@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2px;
+  margin-top: 30px;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  /* margin-top: 2rem; */
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  /* padding: 5px; */
+  /* margin: 0.5rem; */
+}
+
+/* .img-div {
+  justify-content: space-between;
+} */
+
+/* Form CSS */
+
+.hidden {
+  display: none;
+}
+
+.form-class {
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.displayForm {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.textbox {
+  height: 20px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+#sumbitBtn {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#displayData {
+  margin: 2rem;
+}
+
+#data {
+  font-size: 1rem;
+}
+
+#text {
+  margin: 2rem;
+  text-align: center;
+}

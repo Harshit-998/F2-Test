@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles.css" />
+    <title>F2 - Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <button id="image1" onclick="openForm()">
+          <img class="image" src="./images/image1.jpg" alt="Image-1" />
+        </button>
+      </div>
+      <div>
+        <button id="image2" onclick="displayForm()">
+          <img class="image" src="./images/image4.jpg" alt="Image-2" />
+        </button>
+      </div>
+      <div>
+        <button id="image3" onclick="displayDice()">
+          <img class="image" src="./images/image3.jpg" alt="Image-3" />
+        </button>
+      </div>
+      <div>
+        <button id="image4" onclick="generateCoupon()">
+          <img class="image" src="./images/image4.jpg" alt="Image-4" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form-class hidden" id="form">
+      <input type="text" id="name" placeholder="Name: " class="textbox" />
+      <br />
+      <input type="email" id="userName" placeholder="Email: " class="textbox" />
+      <br />
+      <input type="text" id="email" placeholder="Username: " class="textbox" />
+      <br />
+      <br />
+
+      <!-- <label for="name">Name: </label>
+      <input type="text" id="name" required />
+      <br />
+      <br />
+      <label for="userName">User Name: </label>
+      <input type="text" id="userName" required />
+      <br />
+      <br />
+      <label for="email">Email: </label>
+      <input type="email" id="email" required /><br /><br /> -->
+
+      <button id="sumbitBtn" type="submit" onclick="submitForm()">
+        Submit
+      </button>
+    </div>
+
+    <div class="displayForm hidden" id="displayData">
+      <p>Your Details are:</p>
+      <br />
+      <p><span id="data"></span></p>
+      <br />
+      <p>Click next image..</p>
+    </div>
+
+    <div id="text">
+      <h2 id="textDisplay"></h2>
+    </div>
+
+    <!-- All About Dice - score and attempts remaining -->
+
+    <div class="diceScore hidden" id="dice-score">
+      <h3>Attempts remaining: <span id="attemptsLeft">0</span></h3>
+      <br />
+      <div>
+        <button id="dice-img" onclick="diceClicked()">
+          <img class="image" src="./images/dice-6.png" alt="Dice-Image" />
+        </button>
+        <br />
+        <br />
+        <h4>Remaining Clicks: <span id="diceClicks">3</span></h4>
+        <p>Your total Score is : <span id="score">0</span></p>
+      </div>
+    </div>
+
+    <!-- Wrapping up  -->
+
+    <div>
+      <img
+        class="hidden"
+        id="congratulations"
+        src="./images/congrats.jpg"
+        alt="congratulations"
+      />
+    </div>
+
+    <div>
+      <img
+        class="hidden"
+        id="tryAgain"
+        src="./images/again.jpg"
+        alt="Try Again Please"
+      />
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
