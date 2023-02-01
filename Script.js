@@ -46,7 +46,7 @@ function displayForm() {
   text.classList.add("hidden");
   document.getElementById(
     "data"
-  ).innerText = `Name: ${formArray[0].Name}, User Name: ${formArray[0].UserName}, Email: ${formArray[0].Email}`;
+  ).innerText = `Name : ${formArray[0].Name}, UserName : ${formArray[0].Username}, Email : ${formArray[0].Email}`;
 
   document.getElementById("displayData").classList.remove("hidden");
   document.getElementById("image3").disabled = false;
